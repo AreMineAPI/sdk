@@ -1,0 +1,31 @@
+{
+  "name": "@mineapi/sdk",
+  "version": "1.0.1",
+  "description": "The easiest way to use MineAPI.",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "test": "ts-node --transpile-only ./examples/index.spec.ts",
+    "build": "tsc && npm run copy:files",
+    "copy:files": "cpx \"README.md\" \"dist\""
+  },
+  "keywords": [
+    "minecraft",
+    "mineapi"
+  ],
+  "author": "MineAPI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AreMineAPI/sdk",
+    "homepage": "https://mineapi.me"
+  },
+  "dependencies": {
+    "@mineapi/achievements": "^1.0.8",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
